@@ -40,6 +40,7 @@ variable "owner" {
   type        = string
 }
 
+# cicd-fix: Added missing variables 'public' and 'private' to resolve CI errors
 variable "public" {
   description = "Value for public"
   type        = string
