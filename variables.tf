@@ -28,10 +28,7 @@ variable "container_names" {
   type        = map(string)
 }
 
-variable "name" {
-  description = "Value for name"
-  type        = string
-}
+# cicd-fix: Removed unused variable 'name' to align with dev.terraform.tfvars
 
 variable "environment" {
   description = "The environment for the deployment"
