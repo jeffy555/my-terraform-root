@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "generator": "AICloudBuilder",
+  "moduleApproach": "standalone-root",
+  "cloudProvider": "azure",
+  "generatedAt": "2026-04-18T18:11:43.804Z"
+}
