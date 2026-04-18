@@ -10,3 +10,9 @@ container_names = {
   public  = "blob"
   private = "private"
 }
+
+rcbipl  = "private"
+cskipl  = "private"
+dcipl   = "private"
+environment = "production"
+owner       = "terraform"

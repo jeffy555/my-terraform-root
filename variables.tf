@@ -23,7 +23,6 @@ variable "account_replication_type" {
   type        = string
 }
 
-# cicd-fix: Corrected variable definition to resolve unsupported argument error
 variable "container_names" {
   description = "A map of container names and their access types"
   type        = map(string)
@@ -31,5 +30,40 @@ variable "container_names" {
 
 variable "name" {
   description = "Value for name"
+  type        = string
+}
+
+variable "environment" {
+  description = "The environment for the deployment"
+  type        = string
+}
+
+variable "owner" {
+  description = "The owner of the resources"
+  type        = string
+}
+
+variable "public" {
+  description = "Value for public"
+  type        = string
+}
+
+variable "private" {
+  description = "Value for private"
+  type        = string
+}
+
+variable "rcbipl" {
+  description = "Value for rcbipl"
+  type        = string
+}
+
+variable "cskipl" {
+  description = "Value for cskipl"
+  type        = string
+}
+
+variable "dcipl" {
+  description = "Value for dcipl"
   type        = string
 }
