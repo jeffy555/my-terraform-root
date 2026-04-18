@@ -1,13 +1,3 @@
-terraform {
-  backend "azurerm" {
-    resource_group_name  = var.name
-    storage_account_name = var.name
-    container_name       = var.name
-    key                  = "terraform.tfstate"
-    use_azuread_auth     = true
-  }
-}
-
 resource "azurerm_resource_group" "main" {
   name     = var.resource_group_name
   location = var.location
