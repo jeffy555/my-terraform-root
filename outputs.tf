@@ -10,15 +10,15 @@ output "storage_account_id" {
 
 output "public_container_id" {
   description = "The ID of the public storage container"
-  value       = azurerm_storage_container.public.id
+  value       = azurerm_storage_container.containers["public"].id
 }
 
 output "private_container_id" {
   description = "The ID of the private storage container"
-  value       = azurerm_storage_container.private.id
+  value       = azurerm_storage_container.containers["private"].id
 }
 
 output "default_container_id" {
   description = "The ID of the default storage container"
-  value       = azurerm_storage_container.default.id
+  value       = azurerm_storage_container.containers["default"].id
 }

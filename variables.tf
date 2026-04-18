@@ -23,12 +23,10 @@ variable "account_replication_type" {
   type        = string
 }
 
+# cicd-fix: Corrected variable definition to resolve unsupported argument error
 variable "container_names" {
   description = "A map of container names and their access types"
   type        = map(string)
-    public  = "blob"
-    private = "private"
-  }
 }
 
 variable "name" {

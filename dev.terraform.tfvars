@@ -7,3 +7,6 @@ name = "myresume-live-rg"
 account_tier = "Standard"
 account_replication_type = "LRS"
 container_names = {
+  public  = "blob"
+  private = "private"
+}
