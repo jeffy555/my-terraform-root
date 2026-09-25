@@ -1,0 +1,12 @@
+owner = "Jefferson"
+cost_center = "spiritops-test"
+resource_group_name = "spiritops-test-rg"
+storage_account_name = "spiritopsjeffy0909"
+region = "eastus"
+storage_account_sku = "Standard"
+replication = "LRS"
+access_tier = "Hot"
+https_only = true
+min_tls_version = "TLS1_2"
+allow_blob_public_access = false
+subscription_id = "be1b0fcb-1e30-4142-bb0c-ff52f7a1a0e5"
