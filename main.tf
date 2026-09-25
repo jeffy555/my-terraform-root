@@ -30,3 +30,31 @@ resource "azurerm_storage_account" "example" {
     }
   )
 }
+resource "azurerm_service_plan" "app_service_plan" {
+  name                = var.service_plan_name
+  location            = var.app_region
+  resource_group_name = azurerm_resource_group.example.name
+  os_type             = "Linux"
+  sku_name            = var.service_plan_sku
+  worker_count        = var.app_service_worker_count
+
+  tags = local.common_tags
+}
+
+resource "azurerm_linux_web_app" "app_service" {
+  name                = var.app_service_name
+  location            = var.app_region
+  resource_group_name = azurerm_resource_group.example.name
+  service_plan_id     = azurerm_service_plan.app_service_plan.id
+
+  site_config {
+    application_stack {
+      node_version = var.runtime
+    }
+    minimum_tls_version = var.app_minimum_tls_version
+  }
+
+  https_only = var.https_only
+
+  tags = local.common_tags
+}

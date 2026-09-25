@@ -45,3 +45,30 @@ variable "allow_blob_public_access" {
 variable "subscription_id" {
   type = string
 }
+variable "service_plan_name" {
+  type = string
+}
+
+variable "app_service_name" {
+  type = string
+}
+
+variable "service_plan_sku" {
+  type = string
+}
+
+variable "runtime" {
+  type = string
+}
+
+variable "app_minimum_tls_version" {
+  type = string
+}
+
+variable "app_region" {
+  type = string
+}
+
+variable "app_service_worker_count" {
+  type = number
+}
