@@ -17,3 +17,6 @@ runtime = "22-lts"
 app_minimum_tls_version = "1.2"
 app_region = "centralus"
 app_service_worker_count = 1
+postgresql_admin_password = "@akv(\"spiritopskv/spiritops-validation-c831dadf#9412369ae5544081876c1aaee532450c\")"
+
+postgresql_region = "southindia"

@@ -16,3 +16,6 @@ output "app_service_plan_id" {
 output "app_service_id" {
   value = azurerm_linux_web_app.app_service.id
 }
+output "postgresql_flexible_server_id" {
+  value = azurerm_postgresql_flexible_server.spiritopstestpsql.id
+}

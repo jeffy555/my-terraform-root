@@ -72,3 +72,11 @@ variable "app_region" {
 variable "app_service_worker_count" {
   type = number
 }
+variable "postgresql_admin_password" {
+  type      = string
+  sensitive = true
+}
+
+variable "postgresql_region" {
+  type = string
+}

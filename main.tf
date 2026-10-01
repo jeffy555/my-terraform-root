@@ -58,3 +58,21 @@ resource "azurerm_linux_web_app" "app_service" {
 
   tags = local.common_tags
 }
+resource "azurerm_postgresql_flexible_server" "spiritopstestpsql" {
+  name                = "spiritopstestpsql"
+  location            = var.postgresql_region
+  resource_group_name = azurerm_resource_group.example.name
+  administrator_login = "psqladmin"
+  administrator_password_wo = var.postgresql_admin_password
+  administrator_password_wo_version = 1
+
+  sku_name = "B_Standard_B1ms"
+  version  = "16"
+
+  storage_mb = 32768
+
+  backup_retention_days    = 7
+  geo_redundant_backup_enabled = false
+
+  tags = local.common_tags
+}
