@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1104 600" role="img" aria-labelledby="title description" data-build-id="01M416M867RC9T271775NZY760">
+<title id="title">SpiritOps architecture</title>
+<desc id="description">Directional resource dependencies. Each node includes its change label and source link.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8cabb9"/></marker></defs>
+<rect width="1104" height="600" fill="#0b141b"/>
+<g font-family="sans-serif" fill="#e5f0f6"><text x="24" y="30" font-size="19">SpiritOps</text>
+<text x="24" y="53" font-size="12">Build 01M416M867RC9T271775NZY760 · Source 15bf9cf9 · Parent none</text>
+<text x="24" y="80" font-size="12" fill="#8cabb9">= Unchanged</text>
+<text x="156" y="80" font-size="12" fill="#45d99b">+ Create</text>
+<text x="288" y="80" font-size="12" fill="#f4c265">~ Modify</text>
+<text x="420" y="80" font-size="12" fill="#ff747e">− Destroy</text>
+<text x="552" y="80" font-size="12" fill="#ff747e">↻ Replace</text>
+<text x="684" y="80" font-size="12" fill="#ff9a4c">! Drift</text>
+<polyline points="250.33,438 370,534 552,534 734,534 830.95,477" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="321.82,438 370,456 412,456" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="321.82,338 370,320 412,320" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="232.61,338 370,184 412,184" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="692,320 734,320 830.95,377" fill="none" stroke="#8cabb9" stroke-width="1.5" marker-end="url(#arrow)"/>
+<g id="na5c1df0b9a2d89e3bf0d504f2efd0a6618ba9253fd2e3b0f15a82e5b8631d99c" data-address="azurerm_linux_web_app.app_service" data-build-id="01M416M867RC9T271775NZY760">
+<a href="https://github.com/jeffy555/my-terraform-root/blob/15bf9cf9d6fb11589c6bab4ca6772bdcb656738b/main.tf" aria-label="Open azurerm_linux_web_app.app_service source">
+<title>azurerm_linux_web_app.app_service — Unchanged</title><rect x="776" y="377" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="788" y="402" font-size="14">spiritiopsappservice</text>
+<text x="788" y="425" font-size="11">azurerm_linux_web_app</text>
+<text x="788" y="454" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="n46e4e707b5ebd1417e4e8a13763d28994c29dafe8f17fcf6f87a5e0288969273" data-address="azurerm_postgresql_flexible_server.spiritopstestpsql" data-build-id="01M416M867RC9T271775NZY760">
+<a href="https://github.com/jeffy555/my-terraform-root/blob/15bf9cf9d6fb11589c6bab4ca6772bdcb656738b/main.tf" aria-label="Open azurerm_postgresql_flexible_server.spiritopstestpsql source">
+<title>azurerm_postgresql_flexible_server.spiritopstestpsql — Unchanged</title><rect x="412" y="406" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="424" y="431" font-size="14">spiritopstestpsql</text>
+<text x="424" y="454" font-size="11">azurerm_postgresql_flexible_server</text>
+<text x="424" y="483" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="neb90adfdff255f46a68485eb03e3143a71f9b499ca7d105e6a9abe17219065ea" data-address="azurerm_resource_group.example" data-build-id="01M416M867RC9T271775NZY760">
+<a href="https://github.com/jeffy555/my-terraform-root/blob/15bf9cf9d6fb11589c6bab4ca6772bdcb656738b/main.tf" aria-label="Open azurerm_resource_group.example source">
+<title>azurerm_resource_group.example — Unchanged</title><rect x="48" y="338" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="60" y="363" font-size="14">spiritops-test-rg</text>
+<text x="60" y="386" font-size="11">azurerm_resource_group</text>
+<text x="60" y="415" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="n52b2fafc50e5a4b9e549c831ac78b18fb3682624f61b10ff7616a77fa2697e4c" data-address="azurerm_service_plan.app_service_plan" data-build-id="01M416M867RC9T271775NZY760">
+<a href="https://github.com/jeffy555/my-terraform-root/blob/15bf9cf9d6fb11589c6bab4ca6772bdcb656738b/main.tf" aria-label="Open azurerm_service_plan.app_service_plan source">
+<title>azurerm_service_plan.app_service_plan — Unchanged</title><rect x="412" y="270" width="280" height="100" rx="10" fill="#12212b" stroke="#8cabb9" stroke-width="2"/>
+<text x="424" y="295" font-size="14">spiritops-app-plan</text>
+<text x="424" y="318" font-size="11">azurerm_service_plan</text>
+<text x="424" y="347" font-size="12" fill="#8cabb9">= Unchanged</text>
+</a>
+</g>
+<g id="ne8458d578c5844aa422dcaef4e9597855492cedd16b94fa5e085f4ef402d06f9" data-address="azurerm_storage_account.example" data-build-id="01M416M867RC9T271775NZY760">
+<a href="https://github.com/jeffy555/my-terraform-root/blob/15bf9cf9d6fb11589c6bab4ca6772bdcb656738b/main.tf" aria-label="Open azurerm_storage_account.example source">
+<title>azurerm_storage_account.example — Modify</title><rect x="412" y="134" width="280" height="100" rx="10" fill="#12212b" stroke="#f4c265" stroke-width="2"/>
+<text x="424" y="159" font-size="14">spiritopsjeffy0909</text>
+<text x="424" y="182" font-size="11">azurerm_storage_account</text>
+<text x="424" y="211" font-size="12" fill="#f4c265">~ Modify</text>
+</a>
+</g>
+</g></svg>

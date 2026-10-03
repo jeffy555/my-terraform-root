@@ -27,6 +27,7 @@ resource "azurerm_storage_account" "example" {
     {
       "Owner"      = "Jefferson"
       "CostCenter" = "spiritops-test"
+      "Validation" = "writer-handoff-20261003-verified"
     }
   )
 }

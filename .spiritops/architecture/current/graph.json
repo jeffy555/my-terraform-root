@@ -1,0 +1,90 @@
+{
+  "context": {
+    "buildId": "01M416M867RC9T271775NZY760",
+    "commitSha": "15bf9cf9d6fb11589c6bab4ca6772bdcb656738b",
+    "parentBuildId": null,
+    "repo": "jeffy555/my-terraform-root",
+    "workspace": "SpiritOps"
+  },
+  "edges": [
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.example",
+      "target": "azurerm_linux_web_app.app_service"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.example",
+      "target": "azurerm_postgresql_flexible_server.spiritopstestpsql"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.example",
+      "target": "azurerm_service_plan.app_service_plan"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_resource_group.example",
+      "target": "azurerm_storage_account.example"
+    },
+    {
+      "label": "depends on",
+      "source": "azurerm_service_plan.app_service_plan",
+      "target": "azurerm_linux_web_app.app_service"
+    }
+  ],
+  "generator": "spiritops-dagre-v1",
+  "nodes": [
+    {
+      "address": "azurerm_linux_web_app.app_service",
+      "kind": "azurerm_linux_web_app",
+      "layer": "compute",
+      "name": "spiritiopsappservice",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "azurerm_postgresql_flexible_server.spiritopstestpsql",
+      "kind": "azurerm_postgresql_flexible_server",
+      "layer": "storage",
+      "name": "spiritopstestpsql",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "azurerm_resource_group.example",
+      "kind": "azurerm_resource_group",
+      "layer": "compute",
+      "name": "spiritops-test-rg",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "azurerm_service_plan.app_service_plan",
+      "kind": "azurerm_service_plan",
+      "layer": "compute",
+      "name": "spiritops-app-plan",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "unchanged"
+    },
+    {
+      "address": "azurerm_storage_account.example",
+      "kind": "azurerm_storage_account",
+      "layer": "storage",
+      "name": "spiritopsjeffy0909",
+      "source": {
+        "path": "main.tf"
+      },
+      "state": "update"
+    }
+  ],
+  "version": 1
+}

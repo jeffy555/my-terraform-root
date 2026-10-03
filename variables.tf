@@ -45,6 +45,7 @@ variable "allow_blob_public_access" {
 variable "subscription_id" {
   type = string
 }
+
 variable "service_plan_name" {
   type = string
 }
@@ -72,9 +73,11 @@ variable "app_region" {
 variable "app_service_worker_count" {
   type = number
 }
+
 variable "postgresql_admin_password" {
   type      = string
   sensitive = true
+  ephemeral = true
 }
 
 variable "postgresql_region" {
